@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>Controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServletDN</servlet-name>
+        <servlet-class>Controller.UserServletDN</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServletSearch</servlet-name>
+        <servlet-class>Controller.UserServletSearch</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServletInfor</servlet-name>
+        <servlet-class>Controller.UserServletInfor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServletBorrow</servlet-name>
+        <servlet-class>Controller.UserServletBorrow</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Usertracuu</servlet-name>
+        <servlet-class>Controller.Usertracuu</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/formDk</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Usertracuu</servlet-name>
+        <url-pattern>/formtracuu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServletDN</servlet-name>
+        <url-pattern>/formDn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServletSearch</servlet-name>
+        <url-pattern>/formTk</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServletInfor</servlet-name>
+        <url-pattern>/formTt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServletBorrow</servlet-name>
+        <url-pattern>/formBr</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>Dangki.html</welcome-file>
+        <welcome-file>user.html</welcome-file>
+        <welcome-file>tracuu.jsp</welcome-file>
+        <welcome-file>Thuthu.html</welcome-file>
+</welcome-file-list>
+</web-app>
